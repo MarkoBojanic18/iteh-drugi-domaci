@@ -22,13 +22,16 @@
 </head>
 
 <body>
+    {{View::make('header')}}
+    @yield('content')
+    {{View::make('footer')}}
 
 </body>
-
-<script>
-$(document).ready(function() {
-
-})
-</script>
+<style>
+.custom-login {
+    height: 500px;
+    padding-top: 100px;
+}
+</style>
 
 </html>

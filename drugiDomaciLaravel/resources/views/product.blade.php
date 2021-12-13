@@ -35,16 +35,16 @@
     </div>
     <div class="trending-wrapper">
         <h3>Tredning Products</h3>
-
-        <div class="trening-item">
+        @foreach($products as $item)
+        <div class="trending-item">
             <a href="">
-                <img class="trending-image" src="">
+                <img class="trending-image" src="{{$item['gallery']}}">
                 <div class="">
-
+                    <h3>{{$item['name']}}</h3>
                 </div>
             </a>
         </div>
-
+        @endforeach
     </div>
 </div>
 </div>

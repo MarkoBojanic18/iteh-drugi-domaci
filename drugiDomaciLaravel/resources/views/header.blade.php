@@ -8,6 +8,9 @@ if(Session::has('user'))
 ?>
 
 <nav class="navbar navbar-default">
+    <div class="aboveBar">
+        <p>Free shipping on orders over 150$</p>
+    </div>
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -33,6 +36,13 @@ if(Session::has('user'))
                 </div>
                 <button type="submit" class="btn btn-default">Search</button>
             </form>
+            <ul class="nav navbar-nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#futer">About</a></li>
+                <li><a href="ourCollection.html">Our Collection</a></li>
+                <li><a href="index4.html">Contact</a></li>
+                <li><a href="index3.html" target="_target">FAQ</a></li>
+            </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="/cartlist">cart({{$total}})</a></li>
                 @if(Session::has('user'))
@@ -48,5 +58,7 @@ if(Session::has('user'))
                 @endif
             </ul>
         </div><!-- /.navbar-collapse -->
+
+
     </div><!-- /.container-fluid -->
 </nav>

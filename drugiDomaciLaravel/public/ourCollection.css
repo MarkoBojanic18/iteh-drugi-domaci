@@ -1,0 +1,497 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    color: black;
+}
+
+.aboveBar {
+    background-color: #1d1b1b;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    height: 30px;
+    padding-top: 7px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    width: 100%;
+    margin: auto;
+    padding: 1.3rem;
+    background-color: #d4d7de;
+    color: #1d1b1b;
+    height: 70px;
+    position: sticky;
+    top: 30px;
+    z-index: 10;
+}
+
+.navLogo {
+    display: flex;
+    flex-grow: 8;
+    margin-left: 100px;
+}
+
+
+
+.main-menu {
+    display: flex;
+    flex-grow: 1;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-icons {
+    display: flex;
+    flex-grow: 1;
+}
+
+.navbar ul .main-menu {
+    display: flex;
+}
+
+.navbar ul .navbar-icons {
+    display: flex;
+}
+
+.navbar ul li {
+    padding: 0 15px;
+    list-style: none;
+}
+
+.navbar ul li a {
+    padding-bottom: 5px;
+    color: #1d1b1b;
+}
+
+a {
+    margin: 15px;
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.navbar ul li a:hover {
+    border-bottom: solid 2px #1d1b1b;
+}
+
+.navbar-icons ul li i:hover {
+    color: rgb(180, 66, 31);
+}
+
+.toggle-button {
+    position: absolute;
+    top: 0.5rem;
+    display: none;
+    left: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 2px;
+    width: 100%;
+    background-color: #1d1b1b;
+    border-radius: 10px;
+}
+
+@media (max-width:980px) {
+    .toggle-button {
+        display: flex;
+    }
+
+    .main-menu {
+        display: none;
+
+    }
+}
+
+.roditelj {
+    display: flex;
+
+}
+
+.roditelj .levaStrana {
+    flex: 2;
+    background-color: gray;
+    padding: 70px 30px 0 30px;
+}
+
+.roditelj .desnaStrana {
+    flex: 8;
+    background-color: lightgray;
+    padding-top: 70px;
+}
+
+.roditelj .levaStrana .biggerTopic {
+    font-size: 40px;
+    letter-spacing: 3px;
+}
+
+.roditelj .levaStrana hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.levaStrana .smallerTopic {
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+.levaStrana form input {
+    margin-bottom: 10px;
+
+}
+
+.levaStrana .colors div {
+    margin: 5px;
+    font-size: 10px;
+    width: 25%;
+}
+
+.levaStrana .colors {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.levaStrana .colors .black .squar {
+    height: 30px;
+    width: 30px;
+    background-color: black;
+}
+
+.levaStrana .colors .blue .squar {
+    height: 30px;
+    width: 30px;
+    background-color: blue;
+}
+
+.levaStrana .colors .multi-color .squar {
+    height: 30px;
+    width: 30px;
+    background-color: blue;
+}
+
+.levaStrana .colors .orange .squar {
+    height: 30px;
+    width: 30px;
+    background-color: orange;
+}
+
+.levaStrana .colors .pink .squar {
+    height: 30px;
+    width: 30px;
+    background-color: pink;
+}
+
+.levaStrana .colors .purple .squar {
+    height: 30px;
+    width: 30px;
+    background-color: purple;
+}
+
+.levaStrana .colors .red .squar {
+    height: 30px;
+    width: 30px;
+    background-color: red;
+}
+
+.levaStrana .colors .white .squar {
+    height: 30px;
+    width: 30px;
+    background-color: white;
+}
+
+.levaStrana .colors .yellow .squar {
+    height: 30px;
+    width: 30px;
+    background-color: yellow;
+}
+
+
+
+/* DESNA STRANA */
+
+
+
+
+.containter {
+    width: 90%;
+    margin: 100px auto;
+    height: auto;
+}
+
+.heading {
+    margin-bottom: 50px;
+    margin-left: 75px;
+}
+
+.products {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-flow: wrap;
+
+}
+
+.cards {
+    width: 20%;
+    height: 40%;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    margin-bottom: 50px;
+    transition: 0.3s;
+    margin-left: 30px;
+    margin-right: 20px;
+
+}
+
+.card-header img {
+    width: 100%;
+    height: 200px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+
+}
+
+.card-header .drugiRed {
+    width: 100%;
+    height: 250px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.card-body {
+    padding: 30px 20px;
+    font-size: 18px;
+    text-align: justify;
+    color: grey;
+    font-family: sans-serif;
+
+}
+
+
+
+.card-body p span {
+    font-size: 18px;
+    color: black;
+    font-weight: 600;
+}
+
+.card-body .btn {
+    display: block;
+    color: #fff;
+    text-align: center;
+    background: linear-gradient(to right, #ff416c, #ff4b1b);
+    margin-top: 30px;
+    text-decoration: none;
+    padding: 10px 5px;
+}
+
+.cards:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (max-width:1000px) {
+    .cards {
+        width: 40%;
+        height: auto;
+    }
+
+    .card-body {
+        height: auto;
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width:620px) {
+    .containter {
+        width: 100%;
+    }
+
+    .cards {
+        width: 80%;
+        height: auto;
+    }
+
+    .card-body {
+        height: auto;
+        overflow: hidden;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*FOOTER*/
+
+.footer {
+    background-color: #333;
+    color: gray;
+    height: 400px;
+    position: relative;
+
+}
+
+.footer .footer-content {
+    height: 350px;
+    display: flex;
+}
+
+.footer .footer-content .footer-section {
+    flex: 1;
+    padding: 25px;
+
+}
+
+.footer .footer-content h1,
+h2 {
+    color: white;
+    padding-bottom: 15px;
+}
+
+.footer .footer-content .about h1 span {
+    color: red;
+}
+
+.footer .footer-content .about p {
+    padding-left: 20px;
+    text-align: justify;
+}
+
+.footer .footer-content .about .contact span {
+    display: block;
+    font-size: 1.1em;
+    margin-bottom: 8px;
+    margin-left: 20px;
+}
+
+.footer .footer-content .about .socials a {
+    border: 1px solid gray;
+    width: 45px;
+    height: 41px;
+    padding-top: 5px;
+    margin-right: 5px;
+    text-align: center;
+    display: inline-block;
+    font-size: 1.3em;
+    border-radius: 5px;
+    color: gray;
+    transition: all .3s;
+}
+
+.footer .footer-content .about .socials a:hover {
+    border: 1px solid white;
+    color: white;
+    transition: all .3s;
+}
+
+.footer .footer-content .links ul a {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    transition: all .3s;
+    color: gray;
+}
+
+
+
+.footer .footer-content .links ul a:hover {
+    color: white;
+    padding-left: 15px;
+    transition: all .3s;
+}
+
+.footer .footer-content .contact-form form {
+    display: flex;
+    flex-direction: column
+}
+
+.footer .footer-content .contact-form .contact-input {
+    background: #272727;
+    color: #bebdbd;
+    margin-bottom: 10px;
+    line-height: 1.5rem;
+    padding: .7rem 1.2rem;
+    resize: none;
+    border: none;
+}
+
+.footer .footer-content .contact-form .contact-input:focus {
+    background: #1a1a1a;
+}
+
+.footer .footer-content .contact-form form .btn-big {
+    width: 100px;
+    height: 50px;
+    background-color: turquoise;
+    border-radius: 7px;
+}
+
+.footer .footer-bottom {
+    background: #343a40;
+    color: #686868;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    left: 0px;
+    padding-top: 20px;
+    position: absolute;
+    bottom: 0px;
+    top: 100%;
+}
+
+@media only screen and (max-width: 934px) {
+    .footer {
+        height: auto;
+    }
+
+    .footer .footer-content {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .footer .footer-content .contact-form {
+        padding-bottom: 90px;
+    }
+
+    .footer .footer-content .contact-form form .btn-big {
+        width: 100%;
+    }
+
+
+
+}

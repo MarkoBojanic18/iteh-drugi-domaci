@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact| SportLine™ </title>
+    <link rel="stylesheet" href="style4.css">
+
+</head>
+
+<body>
+    <script src="script4.js"></script>
+    <div class="aboveBar">
+        <p>Free shipping on orders over 150$</p>
+    </div>
+    <nav class="navbar">
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+
+        </a>
+        <ul class="main-menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#futer">About</a></li>
+            <li><a href="ourCollection.html">Our Collection</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="index3.html" target="_blank">FAQ</a></li>
+        </ul>
+        <a href="#" class="navLogo"><img src="../slike-videi/LOGO3.png" alt=""></a>
+
+        <ul class="navbar-icons">
+            <li><i class="fas fa-search"></i></li>
+            <li><i class="fas fa-user"></i></li>
+            <li><i class="fas fa-shopping-bag"></i></li>
+        </ul>
+    </nav>
+
+    <div class="top_image">
+        <p id="head"> We are here <br> for you!</p>
+    </div>
+
+    <div class="row">
+        <div id="clm">
+            <img src="images-videos/animacija.gif" alt="first" width="200" height="auto">
+        </div>
+        <div id="clm">
+            <img src="images-videos/animacija.gif" alt="first" width="200" height="auto">
+        </div>
+        <div id="clm">
+            <img src="images-videos/animacija.gif" alt="first" width="200" height="auto">
+        </div>
+        <div id="clm">
+            <img src="images-videos/animacija.gif" alt="second" width="200" height="auto">
+        </div>
+    </div>
+
+
+    <div class="description">
+        <h2>LET'S TALK. BUT YOU FIRST.</h2>
+        <p>Need something? The <b><i>SportLiners</i></b> are here to help! <br>
+            Please first check out our FAQ session where you can find answers to most common questions. <br>
+            Still didn't find what you were looking for? <br>
+            Then feel free to ask us anything and we will be sure to get back to you as soon as possible. <br>
+        </p>
+    </div>
+    <div class="form">
+        <form id="message" action="https://formspree.io/f/xyybnzdo" method="POST">
+            <div class="customer_information">
+                <h3>Please fill the following form:</h3>
+
+
+                <label for="name">First Name *:</label>
+                <input type="text" name="name" size="40" maxlength="50" id="name" placeholder=" Your name.." required>
+                <br>
+                <label for="email">Email *:</label>
+                <input type="text" name="email" size="40" maxlength="50" id="email" placeholder=" Your email.."
+                    required> <br>
+                <label for="phone">Mobile Phone:</label>
+                <input type="text" name="phone" size="40" maxlength="50" id="phone" placeholder=" Your mobile phone..">
+                <br>
+                <div class="continent_selection">
+                    <label for="continent">I am buying from :</label>
+                    <select id="continent" name="continent">
+                        <option value="australia">Australia</option>
+                        <option value="north_america">North America</option>
+                        <option value="south_america">South America</option>
+                        <option value="europe">Europe</option>
+                        <option value="asia">Asia</option>
+                    </select>
+                </div>
+                <label for="message">Message *:</label>
+                <textarea name="Message" rows="6" cols="45" id="message" placeholder="Your message.."
+                    style="height:250px" required></textarea> <br>
+            </div>
+            <br>
+            <p id="sex">Sex :</p>
+            <div class="gender_selection">
+
+                <input type="radio" name="gender" value="male"> Male<br>
+                <input type="radio" name="gender" value="female"> Female<br>
+                <input type="radio" name="gender" value="other"> Other<br>
+            </div>
+            <br>
+            <div class="submit_reset">
+                <button type="submit" id="sub">Submit</button>
+                <button type="reset" id="res">Clear Form</button>
+            </div>
+            <div id="status"></div>
+        </form>
+    </div>
+
+
+
+    <div class="footer" id="futer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h1 class="logo-text">Tech<span>Line</span></h1>
+                <p>
+                    Our mission is what drives us to do everything
+                    possible to expand human potential. We do that
+                    by creating groundbreaking sport innovations,
+                    by making our products more sustainably, by
+                    building a creative and diverse global team
+                    and by making a positive
+                    impact in communities where we live and work.
+                </p>
+                <div class="contact">
+                    <span><i class="fas fa-phone"></i>&nbsp; 381-315-389</span>
+                    <span><i class="fas fa-envelope"></i>&nbsp; info@sportline.com</span>
+                </div>
+                <div class="socials">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-section links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <a href="#">
+                        <li>Events</li>
+                    </a>
+                    <a href="#">
+                        <li>Team</li>
+                    </a>
+                    <a href="#">
+                        <li>Mentores</li>
+                    </a>
+                    <a href="#">
+                        <li>Gallery</li>
+                    </a>
+                    <a href="#">
+                        <li>Terms and Coditions</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="footer-section contact-form">
+                <h2>Contact us</h2>
+                <br>
+                <form action="indexNaslovna.html" method="post">
+                    <input type="email" name="email" class="text-input contact-input"
+                        placeholder="Your email adress...">
+                    <textarea name="message" class="text-input contact-input" placeholder="Your message..."></textarea>
+                    <button type="submit" class="btn btn-big">
+                        <i class="fas fa-envelope"></i>
+                        Send
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; SportLine.com | Designed by Marko
+        </div>
+    </div>
+    <script src="../js/naslovna.js">
+
+    </script>
+</body>
+
+</html>

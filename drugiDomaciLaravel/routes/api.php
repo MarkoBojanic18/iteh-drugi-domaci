@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
+
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -17,3 +18,8 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::get('/surveys', [SurveyController::class,'index']); 
+Route::post('/surveys', [SurveyController::class,'store']); 
+Route::put('/surveys/{id}', [SurveyController::class,'update']); 
+Route::delete('/surveys/{id}', [SurveyController::class,'destroy']); 

@@ -25,7 +25,7 @@ class ProductController extends Controller
     }
 
     function addToCart(Request $req)
-    {
+    {    
         if($req->session()->has('user'))
         {
            $cart= new Cart;
